@@ -1,3 +1,5 @@
+radio.setGroup(4)
+radio.setTransmitPower(3)
 basic.forever(function () {
     basic.showLeds(`
         . . # . .
@@ -6,4 +8,5 @@ basic.forever(function () {
         . # # # .
         . . # . .
         `)
+    radio.sendString("hi")
 })
